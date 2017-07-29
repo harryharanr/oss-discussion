@@ -1,0 +1,17 @@
+<h1>Users list</h1>
+<table class="table">
+    <tr>
+        <th>SNo</th>
+        <th>Email</th>
+        <th>Username</th>
+        <th>Password</th>
+    </tr>
+    <tbody>
+        <tr *ngFor = "let post of users; let i=index">
+           <td>{{i}}</td> 
+            <td>{{post.email}}</td> 
+            <td>{{post.username}}</td> 
+            <td>{{post.password}}</td> 
+        </tr>
+    </tbody>
+</table>
